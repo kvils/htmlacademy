@@ -1,0 +1,73 @@
+/* Общие стили для документа и блоков, менять не надо */
+body {
+  width: 450px;
+  margin: 0;
+  padding: 10px;
+  position: absolute;/*Задаем абсолютную позицию для вырввнивание about-us, main-menu и footer*/
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+}
+
+.logo,
+.contacts,
+.about-us,
+.main-menu,
+.footer {
+  padding: 10px 20px 10px 20px;
+  background-color: #f5f5f5;
+  border: 2px solid #cccccc;
+}
+/*Додали bg,color*/
+.logo,
+.contacts,
+.footer {
+  background-color: #333;
+  color: #fff
+}
+
+
+/* Собственные стили блоков */
+.header {
+  min-height: 40px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  float: left; /*Прибили  к  левому   краю*/
+  width: 110px;
+  padding: 10px 80px; /*top/bottom - 10px, left/right - 80px*/
+  text-align: center;
+  font-weight: bold; /*жирность тексту*/
+}
+
+.contacts {
+  float: right; /*Прибили к правому краю"
+  width: 110px;
+  font-style: italic; /*наклоность текста*/
+  text-align: center;
+}
+
+.about-us {
+  width: 230px; /*увеличили*/
+  margin-bottom: 20px;
+  float: left; /*связан  с  footer*/
+  padding-right: 20px;
+}
+
+.about-us h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.about-us p {
+  font-size: 12px;
+}
+
+.main-menu {
+  width: 110px;
+  float: right;
+}
+
+.footer {
+  clear: both; /*Отменяет обтекание элемента одновременно с правого и левого края*/
+}
